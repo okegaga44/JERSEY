@@ -1,0 +1,710 @@
+body{
+    /* background-color: white; */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hero{
+    background-image: url(../images/IMG_E3889.JPG);
+    background-size: cover;
+    background-position: cover;
+    min-height: 100vh;
+    height: auto;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px 0px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    margin-left: 100px; 
+}
+
+.logo img{
+    width: 15%;
+}
+
+.logo span{
+    color: red;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.links a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+.search-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-right: 100px;
+}
+
+.search-icons i{
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.search-icons i:hover{
+    color: red;
+}
+
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+#search{
+    background-color: white;
+}
+
+.hero-text{
+    margin: 170px 100px;
+    animation: fadeup 2s ease;
+}
+
+@keyframes fadeup{
+    from{
+        opacity: 0;
+        transform: translate(50px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.text h4 {
+    color: red;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.hero-text h1{
+    font-size: 65px;
+    font-weight: 900;
+}
+
+.hero-text h1 span{
+    color: red;
+    font-size: 55px;
+}
+
+.hero-text p{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.hero-btns{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.shop-btn button{
+    background-color: red;
+    padding: 15px 42px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.shop-btn button:hover{
+    color: red;
+    background-color: white;
+    transform: translateY(-15px);
+}
+
+.view-btn .btn1{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid white;
+    text-decoration: none;
+    padding: 15px 42px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.view-btn .btn1:hover{
+    background-color: red;
+    border: none;
+    transform: translateY(-15px);
+}
+
+.jerseys-collection{
+    padding: 25px 0;
+}
+
+.jerseys-collection h1{
+    text-align: center;
+    font-weight: 700;
+}
+
+.search-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
+}
+
+.search-wrapper input{
+    padding: 12px 35px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.search-wrapper input:focus{
+    outline: none;
+    transform: scale(1.04);
+}
+
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.home-jersey{
+    background-color: white;
+    box-shadow: 2px 12px 35px rgba(0, 0, 0, 0.5);
+    padding-bottom: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.home-jersey:hover{
+    transform: translateY(-10px);
+}
+
+.home img{
+    width: 320px;
+    height: 300px;
+}
+
+.home-jersey h2{
+    margin-left: 20px;
+    font-weight: 800;
+}
+
+.home-jersey p{
+    margin-left: 20px;
+    font-weight: 700;
+}
+
+.home-jersey h3{
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: 800;
+    color: red;
+}
+
+.home-jersey button{
+    margin-left: 80px;
+    background-color: red;
+    padding: 15px 45px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s;
+}
+
+.home-jersey button:hover{
+    background-color: rgb(174, 4, 4);
+    transform: translateY(-10px);
+}
+
+.premium-jerseys{
+    background-color: rgb(245, 243, 243);
+    padding: 20px 0;
+}
+
+.premium-jerseys h1{
+    text-align: center;
+    font-weight: 700;
+}
+
+.affordable-jerseys{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.affordable-jersey i{
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    margin-left: 50px;
+}
+
+.affordable-jersey h2{
+    font-weight: 700;
+}
+
+.affordable-jersey p{
+    font-weight: 500;
+}
+
+.popular-clubs{
+    padding: 20px 0;
+}
+
+.popular-clubs h1{
+    text-align: center;
+    font-weight: 700;
+}
+
+.popular-club{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.popular-club i{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 2px 12px 35px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.popular-club img{
+    height: 100px;
+}
+
+.popular-club h3{
+    text-align: center;
+    font-weight: 600;
+}
+
+.popular-club img:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+.testimonial{
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+
+.testimonial h1{
+    text-align: center;
+}
+
+.rating-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.rating-section i{
+    color: white;
+    margin: 0 200px;
+}
+
+.rating{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.rating-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.stars{
+    text-align: center;
+}
+
+
+.dots{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.dot{
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 5px;
+    opacity: 1;
+}
+
+.dot .active{
+    background: red;
+    opacity: 1;
+}
+
+.rating-text img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.offers-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding: 45px 0px;
+}
+
+.offers-section i{
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    border-radius: 50%;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offers-section h1{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.offers-section input{
+    padding: 10px;
+    width: 250px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.offers-section input:focus{
+    outline: none;
+    transform: scale(1.03);
+    border-color: red;
+}
+
+.offers-section button{
+    padding: 12px 30px;
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.offers-section button:hover{
+    transform: scale(1.03);
+    background-color: rgb(174, 4, 4);
+}
+
+.footer-section{
+    background-color: black;
+    color: white;
+    padding: 45px 0px;
+}
+
+.footer{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+}
+
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+
+.footer h1{
+    font-size: 25px;
+}
+
+.footer p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.platforms{
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+.platforms:hover{
+    color: red;
+}
+
+
+.link a{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.link a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+.contact{
+    margin-bottom: 15px;
+}
+
+.payment-method{
+    margin-bottom: 80px;
+}
+
+.payment-logo{
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.fa-cc-mastercard{
+    color: red;
+}
+
+/* .fa-cc-visa,.fa-cc-paypal,.fa-cc-amex{
+    color: blue;
+} */
+
+.footer span{
+    color: red;
+}
+
+.footer-section h3{
+    text-align: center;
+    font-size: 16px;
+    color: grey;
+}
+
+
+@media (max-width: 1024px) {
+    .hero{
+        width: 100%;
+        background-position: right 30% left 30%;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        position: relative;
+    }
+
+
+    .logo{
+        padding-right: 300px;
+    }
+
+    .logo h1{
+         font-size: 25px;
+    }
+
+    .logo img{
+        width: 30%;
+    }
+
+    .links{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 200px;
+        background-color: #e3e6f3;
+        box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+     /* #navbar .active {
+        right: 0px;
+    }  */
+
+    #mobile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    margin-right: 25px;
+    position: absolute;
+    top: 55px;
+    right: 40px;
+}
+
+.search-icons{
+    display: none;
+}
+
+    .view-btn .btn1{
+    padding: 15px 55px;
+    font-size: 14px;
+    margin-bottom: 35px;
+    }
+
+    .hero-text{
+        text-align: center;
+    }
+
+    .text h4{
+        font-size: 18px;
+    }
+    .hero-text h1{
+        font-size: 30px;
+    }
+    
+    .text p{
+        font-size: 18px;
+    }
+    .hero-btns{
+        flex-direction: column;
+    }
+
+    .jerseys-collection h1{
+        font-size: 25px;
+    }
+
+    .home{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .premium-jerseys h1{
+         font-size: 25px;
+    }
+
+    .premium-jerseys h2{
+         font-size: 20px;
+    }
+
+    .premium-jerseys p{
+         font-size: 15px;
+    }
+
+    .affordable-jerseys{
+        flex-direction: column;
+    }
+
+    .popular-club{
+        flex-direction: column;
+    }
+
+    .testimonial h1{
+        font-size: 25px;
+    }
+
+    .rating-section{
+        flex-direction: column;
+    }
+
+    .rating-section h3{
+        font-size: 16px;
+        width: 50%;
+    }
+
+    .rating{
+        width: 80%;
+    }
+
+    .offers-section{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .offers-section h1{
+        font-size: 22px;
+    }
+
+    .offers-section input{
+        width: 200px;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+
+    .footer h1{
+        font-size: 22px;
+    }
+    
+}
+
+@media (max-width: 375px) {
+    .view-btn{
+        margin-bottom: 40px;
+    }
+}
+
+
